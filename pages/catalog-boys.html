@@ -1,0 +1,136 @@
+<div><img id="mainImg" src="/images/boysMain.jpg"></div>
+
+
+<div ng-controller="BoysCtrl" class="catalog-boys">
+
+    <h1>CATALOG | <span>Boys</span></h1>
+
+
+    <button class="catalog-boys-category" ng-click="b_d = !b_d "> Demi-Season
+        </button>
+    <div class="specDiv row" ng-show="b_d">
+        <div class="col-xs-3">
+            <ul>
+                <li><button class="specButton" ng-click="b_d_3piece = !b_d_3piece "> Demi-Season 3 Piece Set</button></li>
+                <li><button class="specButton" ng-click="b_d_jacket = !b_d_jacket "> Demi-Season Jackets</button></li>
+                <li><button class="specButton" href="#" ng-click="b_d_1piece = !b_d_1piece "> Demi-Season One-Piece Set</button></li>
+                <!--                <li><button class="specButton" href="#" ng-click="b_d_pants = !b_d_pants "> Demi-Season Pants</button></li>-->
+                <li><button class="specButton" href="#" ng-click="b_termo= !b_termo "> Termo</button></li>
+            </ul>
+        </div>
+
+        <div class="col-xs-9">
+            <div ng-show="!b_d_3piece" class=" specificCat row">
+                <div class="col-xs-4" ng-repeat="b_d_3I in b_d_3Item">
+                    <img ng-src="/nano_d/{{b_d_3I.article}}.jpg">
+                    <h3>{{b_d_3I.brand}}</h3>
+                    <h3>{{b_d_3I.season}}</h3>
+                    <h3>{{b_d_3I.material1}} | {{b_d_3I.material2}} </h3>
+                    <h2>{{b_d_3I.description}}</h2>
+                </div>
+            </div>
+
+
+
+            <div ng-show="b_d_jacket" class=" specificCat row">
+                <div class="col-xs-4" ng-repeat="b_d_JI in b_d_JItem">
+                    <img ng-src="/nano_d/{{b_d_JI.article}}.jpg">
+                    <h3>{{b_d_JI.brand}}</h3>
+                    <h3>{{b_d_JI.season}}</h3>
+                    <h3>{{b_d_JI.material1}} | {{b_d_3I.material2}} </h3>
+                    <h2>{{b_d_JI.description}}</h2>
+                </div>
+            </div>
+
+
+            <div ng-show="b_d_1piece" class=" specificCat row">
+                <div class="col-xs-4" ng-repeat="b_d_1I in b_d_1Item">
+                    <img ng-src="/nano_d/{{b_d_1I.article}}.jpg">
+                    <h3>{{b_d_1I.brand}}</h3>
+                    <h3>{{b_d_1I.season}}</h3>
+                    <h3>{{b_d_1I.material1}} | {{b_d_1I.material2}} </h3>
+                    <h2>{{b_d_1I.description}}</h2>
+                </div>
+            </div>
+
+
+            <!--
+            <div ng-show="b_d_pants"><div class="col-xs-3" ng-repeat="b_d_JI in b_d_JItem">
+                    <img ng-src="/nano_d/{{b_d_JI.article}}.jpg">
+                    <h3>{{b_d_JI.brand}}</h3>
+                    <h3>{{b_d_JI.season}}</h3>
+                    <h3>{{b_d_JI.material1}} | {{b_d_3I.material2}} </h3>
+                    <h2>{{b_d_JI.description}}</h2>
+                </div></div>
+-->
+
+
+            <div ng-show="b_termo">
+                <div class="col-xs-4" ng-repeat="b_d_termoI in b_d_termoItem">
+                    <img ng-src="/nano_d/{{b_d_termoI.article}}.jpg">
+                    <h3>{{b_d_termoI.brand}}</h3>
+                    <h3>{{b_d_termoI.season}}</h3>
+                    <h3>{{b_d_termoI.material1}} | {{b_d_termoI.material2}} </h3>
+                    <h2>{{b_d_termoI.description}}</h2>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+    <button class="catalog-boys-category" ng-click="b_w = !b_w "> Winter
+        </button>
+
+    <div class="specDiv row" ng-show="b_w">
+        <div class="col-xs-3">
+            <ul>
+                <li><button class="specButton" ng-click="b_w_3piece = !b_w_3piece"> Winter 3 Piece Set</button></li>
+                <li><button class="specButton" ng-click="b_w_jacket = !b_w_jacket"> Winter Jackets</button></li>
+                <li><button class="specButton" ng-click="b_w_1piece = !b_w_1piece"> Winter One-Piece Set</button></li>
+
+            </ul>
+        </div>
+        <div class="col-xs-9">
+
+
+            <div ng-show="b_w_3piece" class=" specificCat row">
+                <div class="col-xs-4" ng-repeat="b_w_3I in b_w_3Item">
+                    <img ng-src="/nano_d/{{b_w_3I.article}}.jpg">
+                    <h3>{{b_w_3I.brand}}</h3>
+                    <h3>{{b_w_3I.season}}</h3>
+                    <h3>{{b_w_3I.material1}} | {{b_d_3I.material2}} </h3>
+                    <h2>{{b_w_3I.description}}</h2>
+                </div>
+            </div>
+
+
+            <div ng-show="b_w_jacket" class=" specificCat row">
+                <div class="col-xs-4" ng-repeat="b_w_jacketI in b_w_JItem">
+                    <img ng-src="/nano_d/{{b_w_jacketI.article}}.jpg">
+                    <h3>{{b_w_jacketI.brand}}</h3>
+                    <h3>{{b_w_jacketI.season}}</h3>
+                    <h3>{{b_w_jacketI.material1}} | {{b_d_3I.material2}} </h3>
+                    <h2>{{b_w_jacketI.description}}</h2>
+                </div>
+            </div>
+
+
+
+            <div ng-show="b_w_1piece" class=" specificCat row">
+                <div class="col-xs-4" ng-repeat="b_w_1I in b_w_1Item">
+                    <img ng-src="/nano_d/{{b_w_1I.article}}.jpg">
+                    <h3>{{b_w_1I.brand}}</h3>
+                    <h3>{{b_w_1I.season}}</h3>
+                    <h3>{{b_w_1I.material1}} | {{b_d_1I.material2}} </h3>
+                    <h2>{{b_w_1I.description}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>

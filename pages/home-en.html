@@ -1,0 +1,166 @@
+<!--
+ <div class=" menuOnTop2 row">
+        <div class="imgLogo col-xs-3 col-md-1 col-lg-2">
+            <a href="#"><img class="imgLogo" src="images/nanoLogo.png"></a>
+        </div>
+        <div class=" whole col-xs-3 col-md-5 col-lg-4">
+            <a href="wholeSale-en.html">
+                <h1>Whole Sale</h1>
+                <div>Drop Shipping</div>
+            </a>
+        </div>
+        <div class=" retail col-xs-3 col-md-5 col-lg-4">
+            <a href="retailSale-en.html">
+                <h1>Retail Sale</h1>
+            </a>
+        </div>
+        <div class=" imgLogo col-xs-3 col-md-1 col-lg-2">
+            <a href="#"><img src="images/pelucheLogo.png"></a>
+        </div>
+    </div>
+-->
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+        <li data-target="#myCarousel" data-slide-to="7"></li>
+        <li data-target="#myCarousel" data-slide-to="8"></li>
+        <li data-target="#myCarousel" data-slide-to="9"></li>
+        <li data-target="#myCarousel" data-slide-to="10"></li>
+
+
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="/images/header1.jpg" alt="Los Angeles">
+        </div>
+
+        <div class="item">
+            <img src="/images/header2.jpg" alt="Chicago">
+        </div>
+
+        <div class="item">
+            <img src="/images/header3.jpg" alt="New York">
+        </div>
+        <div class="item">
+            <img src="/images/header4.jpg" alt="Los Angeles">
+        </div>
+
+        <div class="item">
+            <img src="/images/header5.jpg" alt="Chicago">
+        </div>
+
+        <div class="item">
+            <img src="/images/header6.jpg" alt="New York">
+        </div>
+        <div class="item">
+            <img src="/images/header7.jpg" alt="Los Angeles">
+        </div>
+
+        <div class="item">
+            <img src="/images/header8.jpg" alt="Chicago">
+        </div>
+
+        <div class="item">
+            <img src="/images/header9.jpg" alt="New York">
+        </div>
+        <div class="item">
+            <img src="/images/header10.jpg" alt="Los Angeles">
+        </div>
+
+        <div class="item">
+            <img src="/images/header11.jpg" alt="Chicago">
+        </div>
+
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="myclass glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div class="row">
+    <div  ng-controller="mainController" class="col-xs-7">
+
+        <div  class="aboutHome">
+            <h1>Our world</h1>
+            <h2>From snowsuits to sportswear to swimwear, comfortable clothes for any occasions!</h2>
+
+            <p>From it’s durable and colorful outerwear garments ready to tackle any challenge <button ng-click="showNano = !showNano">NANO</button> Mother Nature has to offer, big or small, to it’s refreshing swimwear collection that will keep your children play in the water until it’s time to put their pyjamas with it’s funny characters and glow in the dark features. This is all without forgetting an extensive<button ng-click="showPeluche = !showPeluche">PELUCHE</button> sportswear line, offering styles for special occasions and everyday wear in fabrics that are always soft and stretchable for extra comfort... <a href="aboutUs-en.html"> Read more about us...</a></p>
+
+
+        <div class="showBrand" ng-show="showNano">
+            <p>Nano is well known in Canada and Europe since its launch in 1999. It's 2016 when the line appeared in the US under the name Nöruk Collection. Both lines, which are the same, except for the name, offer everything you need for any occasion!</p>
+
+            <p>Our extensive collection includes first durable and colorful outerwear garments, ready to tackle any challenges Mother Nature has to offer. Our swimwear will keep your kids in the water until it's time to put their beautiful Nanö / Nöruk pyjamas. They are so cute with their funny characters and glow in the dark features! This is all without forgetting an extensive sportswear line, offering styles for both every day wear and special occasions, requiring a touch of chic! And all this in fabric that are always soft and stretchable for extra comfort.</p>
+
+            <p>Our designer travel the world to find the best trends for Nanö / Nöruk. We take pride in offering designs children love to play in and «easy to care» to the delight of parents.</p>
+
+            <p>Nanö/ Nöruk offer a wide range of items that will fill the needs of kids aged from 0 to 12 years!</p>
+        </div>
+        <div class="showBrand" ng-show="showPeluche">
+            <p>Peluche et Tartine is a favorite label for parents seeking quality, style and durability at an affordable price.</p> 
+            <p>Inspired by today’s trends, our designers reinvent classics styles for coats, rain gear, snow suits and accessories for children aged 3 months to 8 years old. Its bright colors, playful embroidery and varied prints appeal to children’s fashion sense.</p>
+        </div>
+        </div>
+
+        <div class="wholeRatailImg" class="row">
+            <div class="col-xs-6">
+                <a href="whole-main-en.html">
+                    <h1>WHOLE SALES</h1> Drop Shipping<img src="/images/girlsOutwear.jpg"></a>
+            </div>
+
+            <div id="retailImgHome" class="col-xs-6">
+                <a href="retail-main-en.html">
+                    <h1>RETAIL SALES</h1>Nano & Peluche<img src="/images/boysOutwear.jpg"></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="newsDiv" class="col-xs-5">
+<h1>Hot News</h1>
+   <div class="news">
+      <div class="newsbackimg">    
+   </div><a href="#">SALES</a></div>
+   <div class="news">
+       <div class="newsbackimg"></div>
+          <a href="#">NEW COLLECTION</a></div>
+   <div class="news">
+       <div class="newsbackimg"></div>
+      <a href="#">BOOK TODAY - GET 15% sale!</a></div>
+   <div class="news">
+       <div class="newsbackimg"></div>
+      <a href="#">WE HAVE A NEW STORE!</a></div>
+   <div class="news">
+       <div class="newsbackimg"></div>
+      <a href="#">SWINSUITS'VE ARRIVED!</a></div>
+   <div id="formorenews">
+       <div class="newsbackimg"></div>
+      <a href="news-en">Read more news...</a></div>
+
+    </div>
+</div>
+
+
+
+<!--
+<div id="sales">
+    <a href="sales-en.html"><img src="../images/sales1.jpg"></a>
+</div>
+-->

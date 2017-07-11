@@ -1,0 +1,15 @@
+<h1>ACCESSORIES</h1>
+<table ng-controller="AccessoriesCtrl">
+    <tr>
+        <th>ARTICLE</th>
+        <th>CATEGORY</th>
+        <th>BRAND</th>
+        <th>DESCRIPTION</th>
+    </tr>
+   <tr ng-repeat="item in accessories" >
+        <td>{{item.article}}</td>
+        <td>{{item.category}}</td>
+        <td>{{item.brand}}</td>
+        <td><img ng-src="/nano_d/{{item.article}}.jpg"></td>
+    </tr>
+</table>

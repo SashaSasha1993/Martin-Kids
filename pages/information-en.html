@@ -1,0 +1,196 @@
+<div><img id="mainImg" src="/images/header10.jpg"></div>
+<!--
+<div class="information row">
+    <div class="col-xs-3"><button ng-click="paymentF()">Payment &amp; Delivery</button></div>
+    <div class="col-xs-3"><button ng-click="returnPolicyF()">Return Policy</button></div>
+    <div class="col-xs-2"><button ng-click="sizeTableF()">Size Table</button></div>
+    <div class="col-xs-2"><button ng-click="discountF()">Discount System</button></div>
+    <div class="col-xs-2"><button ng-click="faqF()">FAQ</button></div>
+</div>
+
+-->
+
+<div class="information">
+    <div id="button_menu">
+        <button ng-click="paymentF()">Payment &amp; Delivery</button>
+        <button ng-click="discountF()">Discount System</button>
+
+        <button ng-click="sizeTableF()">Size Table</button>
+        <button ng-click="faqF()">FAQ</button>
+
+    </div>
+
+
+</div>
+
+<div class="paymentcss information" ng-show="payment">
+
+    <h6>PLACING AN ORDER</h6>
+    <h3>On-line</h3>
+    <h4>You can order any purchase on the page <a ng-href="#/catalog_retail_en">CATALOG</a> after you <a ng-href="#/signIn-en">Sign In </a></h4>
+
+    <h3>Order by e-mail</h3>
+    <h4>You can make an order by sending a letter by <a href="mailto:martin_kids@mail.com">Email</a>. The letter should contain the list of items you would like to order, as well as the phone number and the delivery address. After receiving the letter, our operators will contact you by phone to clarify the order, conditions and terms of delivery.</h4>
+
+    <h3>Order by phone</h3>
+    <h4>
+        <li>(050) 974 23 37 (from 09:00 to 21:00)</li>
+        <li>(093) 202 63 00 (from 09:00 to 21:00)</li>
+        <li>(068) 393 71 35 (from 09:00 tо 21:00)
+        </li>
+    </h4>
+
+    <h3>Order by Text message</h3>
+    <h4>Send a Text massage with the word "ORDER" by number(050) 974 23 37, and out operator will contact you to get your order.</h4>
+
+
+    <h6>DELIVERY</h6>
+    <h3>Delivery is carried out throughout Ukraine</h3>
+
+    <h3>Cost of delivery</h3>
+    <dl>
+        <dt><h3>Delivery in Kiev</h3></dt>
+        <dd>
+            <h4>Order from 100 to 1000 UAH. The cost of delivery is 30 UAH</h4>
+        </dd>
+        <dd>
+            <h4>The order is over 1000 UAH. Free delivery</h4>
+        </dd>
+
+    </dl>
+
+    <h4>The boundaries of Kiev on the official website of the Kiev city government</h4>
+
+    <h3>Delivery in Ukraine</h3>
+    <h4>Is carried out according to the tariffs of Nova Posta, SAT, Autolux, Night Express, Intime, and others</h4>
+    <dl>
+        <dt><h3>Cost of delivery in Ukraine</h3></dt>
+        <dd>
+            <h4>Order up to 2000 UAH. At the rates of courier service</h4>
+        </dd>
+        <dd>
+            <h4>The order is more than 2000 UAH. Free delivery</h4>
+        </dd>
+
+    </dl>
+
+
+    <h3>Pickup</h3>
+    <h4>You can pick up your order in our store from 9:00 to 21:00 by prior arrangement, including weekends</h4>
+
+    <h3>Delivery in Kiev and in the suburbs of Kiev is carried out within 2 working days from the moment of placing the order</h3>
+
+
+    <h3>On weekends and holidays, the delivery department works by prior arrangement</h3>
+
+    <h6>Payment</h6>
+
+    <h3>Cash</h3>
+    <h4>Payment upon receipt of items in Kiev</h4>
+
+    <h3>Transfer</h3>
+    <h4>Transfer of money to the PRIVAT BANK card</h4>
+
+    <h3>Cash on delivery</h3>
+    <h4>Cash on delivery at the delivery of courier service "Nova Posta", the cost of money transfer is paid by the Buyer</h4>
+
+    <h3>On-Line</h3>
+    <h4>Pay ON-LINE on out website after <a ng-href="#/singUp-en">Sign-Up</a></h4>
+
+    <h6>Terms of return / exchange </h6>
+
+    <h4>If the product does not suit you, you can return it to the courier on site, paying only the shipping cost</h4>
+
+    <h4>within 14 days after purchase, subject to the preservation of the presentation and all labels. In this case, the Customer pays for courier services, or delivers the goods to our office independently</h4>
+
+
+</div>
+
+
+<div class="paymentcss information" ng-show="discount">
+    <h6>DISCOUNT PROGRAM FOR CONSTANT BUYERS</h6>
+
+    <h3>In the online store of children's clothing there is a savings system of discounts.</h3>
+    <h4> That is, the total cost of all the goods ordered by you is summed up on your personal account.</h4>
+    <h4> Then, according to the total amount of ordered goods, a cumulative discount is calculated:</h4>
+    <ul>
+        <li>From 3000 UAH - <span>3%</span></li>
+        <li>From 50000 UAH -<span> 5%</span></li>
+        <li>From 10000 UAH to<span> 7%</span></li>
+    </ul>
+    <h4>Cumulative discount applies to all products presented in the online store, including the "Sale" section.</h4>
+</div>
+
+
+<div class="information" ng-show="faq">
+    <h1>FAQ</h1>
+
+    <h3>What’s the optimal way to wash clothes to keep them longer?</h3>
+    <h4>Generally speaking, please refer to the washing labels attached to the inside of the garment. We also recommend that you always wash them inside out in cold water, separating the colors in the first wash. If you use a dryer, preferably choose a low drying temperature. Snowsuits should always be washed in cold water and dried at low temperature to remain fully waterproof.</h4>
+    <hr>
+
+    <h3>What’s the lowest winter temperature your snowsuits are designed for?</h3>
+    <h4>Our snowsuits are designed for very cold temperatures, going as low as -30 ° C, thanks to the combination of 3 specific layers: 100% polyester or 100% nylon weatherproof fabric, a high density interlining and, finally, a microfleece lining.</h4>
+    <hr>
+
+    <h3>Are your snowsuits waterproof?</h3>
+    <h4>Yes. The combination of an inner membrane and a hydrophilic Dupont Teflon surface treatment brings to our coats a high waterproofing of 5,000 mm. This protection, applied to the surface of our fabrics, offers the added advantage of being dirt-repellant and promotes faster drying.</h4>
+    <hr>
+
+    <h3>What time of year is your rain gear designed for?</h3>
+    <h4>Our rain suits are designed to be worn in the spring, and at the end of the fall period. Lined with microfleece for warmth and comfort, our coats are designed with a waterproofing treatment-coated fabric on the surface, and a hydrophilic membrane on the inside of the garment.</h4>
+    <hr>
+
+    <h3>How do I select the right size garment for my child?</h3>
+    <h4>We now have a size chart available on our website that matches the size of our clothes. You can take the measurements of your child according to the diameter of his/her chest, waist and hips and thus be guided in the choice of clothing size.</h4>
+    <hr>
+
+    <h3>Why aren’t there any prices on the website, nor an online store?</h3>
+    <h4>Online sales are not yet available on our website. We invite you to visit the websites of our retailers to find the prices, and to make your purchases. You can view the list of our retailers in the Points of Sale section.</h4>
+    <hr>
+
+    <h3>How can we stay informed of news updates?</h3>
+    <h4>Please check our website regularly, or follow us on our Facebook page. We publish all newly available collections at the beginning of each season.</h4>
+    <hr>
+
+    <h3>Is it possible to be a distributor and represent the Nanö brand internationally?</h3>
+    <h4>Yes. If you have an interest in distributing our brand abroad, we’ll be happy to answer your questions. Please contact us at the following email address: info@nanocollection.com.</h4>
+
+    <h5>We didn't answer your question? <a href="#/contactUs-en">CONTACT US</a></h5>
+
+</div>
+
+<div class="information" ng-show="sizeTable">
+
+    <h1>Size Table</h1>
+
+    <div class="row">
+        <div class="col-xs-4">
+            <h2>How to measure your child ?</h2>
+            <dl>
+                <hr>
+                <dt>Height</dt>
+                <dd>It is the total height of your child, from the top of his or her head to the ground.</dd>
+
+                <hr>
+                <dt>Chest</dt>
+                <dd>It is the largest part of the chest underneath the arms.</dd>
+
+                <hr>
+                <dt>Waist</dt>
+                <dd>It is the thinnest part of the waist.</dd>
+
+                <hr>
+                <dt>Hips</dt>
+                <dd>It is the biggest part of the hips.</dd>
+
+            </dl>
+
+
+        </div>
+        <div class="col-xs-3 informationfirstimg">
+            <img src="/images/sizeTable.png"></div>
+        <div class="col-xs-5 informationsecondimg"><img src="/images/sizeTable2.png"></div>
+    </div>
+    <h5>We didn't answer your question? <a href="#/contactUs-en">CONTACT US</a></h5>
+</div>

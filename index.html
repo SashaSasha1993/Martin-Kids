@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Starter Template</title>
+
+    <!-- Bootstrap -->
+
+    <link type="text/css" href="index.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="all" ng-app="myApp">
+
+
+    
+        <div id="languagesOnTop" class="row">
+
+
+            <div class=" langmenu col-xs-7 col-lg-9">Change a language: <a href="home-en.html">English</a><span> </span><a href="home-ru.html">Russian</a></div>
+            <div class="search col-xs-5 col-lg-3">
+
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter your key word">
+                    </div>
+                    <button type="button" class="btn btn-default">Search</button>
+                </form>
+            </div>
+        </div>
+        
+           
+    
+<!--
+    <div id="menuOnTop" class="row">
+        <div id="peluchelogoimg" class="col-xs-1"><img src="images/pelucheLogo.png"></div>
+        <div id="nanologoimg" class="col-xs-1"><img src="images/nanoLogo.png"></div>
+
+        <div class=" mainmenu col-xs-10">
+            <ul>
+
+                <li><a ng-href="#/">HOME</a></li>
+                <li><a ng-href="#/aboutUs-en">ABOUT US</a></li>
+                <li><a ng-href="#/wholeSales-en">WHOLE SALES</a></li>
+                <li><a ng-href="#/retailSales-en">RETAIL SALES</a></li>
+                <li><a ng-href="#/catalog-en">CATALOG</a></li>
+                <li><A ng-href="#/information-en">INFORMATION</A></li>                
+
+                <li><a ng-href="#/news-en">NEWS</a></li>
+
+                <li><a ng-href="#/contactUs-en">CONTACT US</a></li>
+                <li>
+                    <a ng-href="#/signIn-en"><img src="images/user_man.png"></a>
+                </li>
+                <li><a ng-href="#/signIn-en">SIGN IN</a></li>
+                <li><a ng-href="#/signUp-en">SIGN UP</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+-->
+    <div id="menuOnTop" class="row">
+        <div id="peluchelogoimg" class="col-xs-6"><img src="images/pelucheLogo.png"></div>
+        <div id="nanologoimg" class="col-xs-6"><img src="images/nanoLogo.png"></div>
+
+    </div>
+        <div class=" mainmenu">
+            <ul>
+
+                <li><a ng-href="#/">HOME</a></li>
+                <li><a ng-href="#/aboutUs-en">ABOUT US</a></li>
+                <li><a ng-href="#/wholeSales-en">WHOLE SALES</a></li>
+                <li><a ng-href="#/retailSales-en">RETAIL SALES</a></li>
+                <li><a ng-href="#/catalog-en">CATALOG</a></li>
+                <li><A ng-href="#/information-en">INFORMATION</A></li>                
+
+                <li><a ng-href="#/news-en">NEWS</a></li>
+
+                <li><a ng-href="#/contactUs-en">CONTACT US</a></li>
+                <li>
+                    <a ng-href="#/signIn-en"><img src="images/user_man.png"></a>
+                </li>
+                <li><a ng-href="#/signIn-en">SIGN IN</a></li>
+                <li><a ng-href="#/signUp-en">SIGN UP</a></li>
+
+            </ul>
+        </div>
+
+    <div  ng-controller="mainController" id="divView" ng-view></div>
+    <!--    <div id="map"></div>-->
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+
+    <script type="text/javascript" src="app.js"></script>
+
+
+
+    <!--   FOR MAPS!-->
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArtg0ZdrXoh2yDjgFT_LTuJvx2lF30ug8&callback=initMap" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
